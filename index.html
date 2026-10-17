@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2f7d4f">
+  <title>Pantry Board</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><h1>Pantry Board</h1></header>
+  <nav>
+    <button data-tab="plan" class="active">Week</button>
+    <button data-tab="pantry">Pantry</button>
+    <button data-tab="grocery">Grocery</button>
+  </nav>
+  <main>
+    <section id="plan">
+      <button id="generate" class="primary">Generate this week's dinners</button>
+      <ul id="planList" class="cards"></ul>
+    </section>
+    <section id="pantry" hidden>
+      <form id="pantryForm">
+        <input id="pantryInput" placeholder="Add item (e.g. rice, ground beef)" autocomplete="off" required>
+        <button class="primary">Add</button>
+      </form>
+      <ul id="pantryList" class="chips"></ul>
+    </section>
+    <section id="grocery" hidden>
+      <p class="muted">Ingredients for this week's plan that aren't in your pantry.</p>
+      <ul id="groceryList" class="checks"></ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+:root { --green:#2f7d4f; --bg:#fdf6e3; --ink:#222; --card:#fff; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:system-ui,sans-serif; background:var(--bg); color:var(--ink); }
+header { background:var(--green); color:#fff; padding:14px 16px; }
+h1 { margin:0; font-size:1.3rem; }
+nav { display:flex; background:#fff; border-bottom:1px solid #ddd; }
+nav button { flex:1; padding:12px; border:0; background:none; font-size:1rem; }
+nav button.active { border-bottom:3px solid var(--green); font-weight:600; }
+main { padding:16px; max-width:640px; margin:auto; }
+button.primary { background:var(--green); color:#fff; border:0; border-radius:8px; padding:10px 14px; font-size:1rem; }
+#generate { width:100%; margin-bottom:12px; }
+ul { list-style:none; padding:0; margin:0; }
+.cards li { background:var(--card); border-radius:10px; padding:12px; margin-bottom:10px; box-shadow:0 1px 3px #0002; }
+.cards small, .muted { color:#666; }
+.cards a { color:var(--green); }
+#pantryForm { display:flex; gap:8px; margin-bottom:12px; }
+#pantryInput { flex:1; padding:10px; font-size:1rem; border:1px solid #ccc; border-radius:8px; }
+.chips { display:flex; flex-wrap:wrap; gap:8px; }
+.chips li { background:#fff; border:1px solid #ccc; border-radius:999px; padding:6px 12px; }
+.chips li button { border:0; background:none; margin-left:6px; color:#a00; }
+.checks li { background:#fff; padding:12px; border-radius:8px; margin-bottom:6px; }
+.checks input { margin-right:10px; transform:scale(1.3); }
+.checks input:checked + span { text-decoration:line-through; color:#999; }
