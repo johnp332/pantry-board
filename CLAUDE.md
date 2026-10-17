@@ -9,6 +9,7 @@ Personal weekly meal-planning, pantry, and grocery-list web app. Installable PWA
 - Mobile-first. Test at ~390px width.
 - When changing any cached file, bump `CACHE` in `sw.js`.
 - Keep recipes in `RECIPES` in `app.js`; prefer real recipe links in `url`.
+- Never push to `main`. Work on a branch, push it, and open a PR with `gh pr create` for the user to review and merge.
 
 ## Run locally
 `python3 -m http.server 8000` then open http://localhost:8000
